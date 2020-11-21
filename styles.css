@@ -1,0 +1,378 @@
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 15vh 70vh 25vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1 {
+    white-space: nowrap;
+    font-size: 3vh;
+}
+
+i {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.search {
+    padding-right: 5%;
+}
+
+.searchbar {
+    border: 1px solid black;
+    border-radius: 1em;
+    height: 3vh;
+    width: 30vw;
+    background-color: white;
+}
+
+.searchbutton {
+    height: 3vh;
+    width: 3vw;
+    border: 1px solid black;
+    border-radius: .5em;
+    background-color:  #B8E8FF;
+}
+
+.searchbutton:hover {
+    background-color: #d64b88;
+}
+
+.menubar li {
+    display: inline-block;
+    text-align: center;
+    background-color:  #B8E8FF;
+    border-radius: .5em;
+    padding: .5rem;
+    border: 1px solid black;
+}
+
+.menubar li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+}
+
+.menubar li:hover {
+    background-color: #d64b88;
+}
+
+
+footer {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    background-color: #e7e7e7;
+}
+
+main {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35vh 35vh;
+}
+
+.top {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picture {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.picture img {
+    width: 100%;
+    box-shadow: 10px 10px 5px gray;;
+}
+
+.item {
+    padding-right: 5%
+}
+
+.item i {
+    font-size: 7vh;
+}
+
+.item {
+    font-size: small;
+    text-align: center;
+}
+
+.top button {
+    text-align: center;
+    background-color: #B8E8FF;
+    border-radius: .5em;
+    padding: .5rem;
+    border: 1px solid black;
+    font-size: 1.8vh;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.top button:hover {
+    background-color: #d64b88;
+    cursor: pointer;
+}
+
+
+.bottom {
+    grid-column: 1;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    width: 30vw;
+    font-size: 1.8vh;
+    padding-left: 5%;
+}
+
+.cal {
+    font-size: 5vh;
+}
+
+.events {
+    padding-left: 10%;
+}
+
+.arrow i {
+    font-size: 10vh;
+}
+
+.calendar img {
+    height: 32vh;
+    width: auto;
+}
+
+.calendar {
+    padding-right: 7%;
+    padding-bottom: 5%;
+    width: 25%;
+}
+
+.calendar img {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 5%;
+}
+
+.links {
+    padding-left: 5%;
+}
+
+.form {
+    padding-right: 5%;
+}
+
+.links a {
+    display: block;
+    color: blue;
+}
+
+.links a:hover {
+    color:  #d64b88;
+}
+
+.links p {
+    font-size: 1.8vh;
+}
+
+.links i {
+    padding: 1%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+fieldset {
+    border: 0;
+}
+
+fieldset input {
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: #e7e7e7;
+    width: 25vw;
+    margin-bottom: 0;
+}
+
+fieldset input:valid {
+    border-bottom-color: green;
+}
+
+
+::placeholder {
+    color: #808080;
+}
+
+.form button {
+background :#B8E8FF;
+border: 1px solid black;
+color:black;
+font-size: 1.8vh;
+height: 30;
+width: 100px;
+border-radius: .5em;
+text-transform: uppercase;
+box-shadow: 5px 5px 5px gray;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background-color: #d64b88;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+
+@media only screen and (max-width: 780px) {
+   #menu {
+       display: none;
+   }
+
+   .slicknav_menu {
+       display: block;
+       background-color: #e7e7e7 !important;
+   }
+
+   ul {
+       background-color: #e7e7e7;
+   }
+
+
+   button:hover {
+       background-color:  #d64b88;
+   }
+
+   .collapse {
+       background-color: #B8E8FF;
+       border: 1px solid black;
+       color: black !important;
+       text-transform: uppercase;
+       font-weight: bold;
+       border-radius: .5em;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+  .collapse a:hover {
+      background-color: #d64b88;
+  }
+
+  .header {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .searchbar {
+      width: 80vw;
+      margin-bottom: 2%;
+  }
+
+  h1 {
+      justify-self: flex-start;
+      padding-right: 40%;
+      font-size: 4vh;
+  }
+
+
+   h1 i {
+       font-size: 5vh;
+   }
+
+   .searchbutton {
+       width: 8vw;
+   }
+
+   .item i, .item p, .events, .arrow {
+       display: none;
+   }
+
+   .picture img {
+    display: none;
+}
+
+   .top {
+    display: flex;
+    flex-direction: column;
+   }
+
+
+   footer {
+       display: flex;
+       flex-direction: column;
+   }
+
+   fieldset {
+       background: #e7e7e7
+   }
+
+   .top button {
+       width: 90vw;
+       height: 10vh;
+       align-self: center;
+       font-size: 3vh;
+       margin-bottom: 2%;
+   }
+
+   .calendar {
+       display: none;
+   }
+
+   .info {
+       width: 80vw;
+       text-align: center;
+       font-size: 2.5vh;
+       margin-top: 10%;
+       margin-bottom: 10%;
+       margin-left: 4%;
+   }
+
+   footer {
+       display: flex;
+       flex-direction: column;
+   }
+
+
+   .form {
+       text-align: center;
+   }
+
+   fieldset input {
+       width: 80vw;
+   }
+
+ 
+  
+
+}
+

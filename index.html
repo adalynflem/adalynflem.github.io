@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UNC Running Club</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initia scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+        <script>
+            $(function() {
+              $('#menu').slicknav();
+            });
+          </script>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1><i class="fas fa-running"></i>UNC Running Club</h1>
+            <form class="search">
+                <input class="searchbar" type="text" name="searchbar" placeholder="Where do you want to go?">
+                <button class="searchbutton" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <nav class="menubar">
+                <ul id="menu">
+                    <li><a class="collapse" href="#">training</a></li>
+                    <li><a class="collapse" href="#">gear</a></li>
+                    <li><a class="collapse" href="#">service</a></li>
+                    <li><a class="collapse" href="#">races</a></li>
+                </ul>
+            </nav>
+            </header>
+            <main>
+                <div class="top">
+                    <div class="picture">
+                        <img src=team.jpg alt="a team picture from the 2019 home meet">
+                    </div>
+                        <div class="item">
+                            <i class="fas fa-user-friends"></i>
+                            <p>Learn about joining and requirements for members.</p>
+                            <button>MEMBERSHIP</button>
+                        </div>
+                        <div class="item">
+                            <i class="far fa-stopwatch"></i>
+                            <p>Find our practice schedule and locations here.</p>
+                            <button>PRACTICE</button>
+                        </div>
+                        <div class="item">
+                            <i class="far fa-file-signature"></i>
+                            <p>Reach out with question or service & race opportunities.</p>
+                            <button>CONTACT</button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="info">
+                        <h2>Train. Race. Repeat.</h2>
+                        <p>UNC Running Club is a fun, inclusive club for runners of all levels! We welcome all runners, from competitive to casual. We offer cross county races in the fall and track & road races in the spring. We will practice twice daily beginning August 24th (7am and 5pm) outside of Carmicheal Gym by Hooker Fields. </p>
+                    </div>
+                    <div class="events">
+                        <h2>Upcoming Events</h2>
+                    </div>
+                    <div class="arrow">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                    <div class="calendar">
+                        <img src="calendar.png" alt="January 2021 calendar">
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="links">
+                    <h4>Important Links</h4>
+                    <p><i class="fas fa-link"></i>For forms, waivers, and to check membership visit <a href="https://heellife.unc.edu">Heel Life</a></p>
+                    <p><i class="fas fa-link"></i>For facilities information and other resources for club athletes visit <a href="https://campusrec.unc.edu">UNC Campus Recreation</a></p>
+                </div>
+                <div class="form">
+                    <fieldset>
+                        <h4>Join our listserv!</h4>
+                          <div>
+                            <input type="text" name="name" id="name"
+                        placeholder="first and last name" required />
+                          </div>
+                          <div>
+                            <input type="email" name="email" id="email"
+                        placeholder="email@live.unc.edu" required />
+                          </div>
+                        <br/>
+                        <button type="submit">Submit</button>
+                        </fieldset>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
